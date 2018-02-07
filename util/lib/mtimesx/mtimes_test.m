@@ -1,0 +1,9 @@
+mtimesx_test_ddequal
+mtimesx_test_ddspeed
+mtimesx_test_dsequal
+mtimesx_test_dsspeed
+mtimesx_test_nd
+mtimesx_test_sdequal
+mtimesx_test_sdspeed
+mtimesx_test_ssequal
+mtimesx_test_ssspeed
