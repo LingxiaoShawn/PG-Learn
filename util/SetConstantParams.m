@@ -1,4 +1,5 @@
 function params = SetConstantParams(params)
+% set default params for: 
 % params.graph_type  - 1=euclidean (current only support 1) 
 % params.isSparse    - use sparse operation or not (suggest sparse)
 % params.lambda      - learning rate for gradient-based method

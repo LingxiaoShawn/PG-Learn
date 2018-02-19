@@ -1,4 +1,4 @@
-function combinedResult = RankGL_HParallel(data, dataInfoForNaming, params)
+function combinedResult = PGLearn_hyperband(data, dataInfoForNaming, params)
 % Run RankGL in hyperband-parallel setting
 % ===================================
 % Inputs

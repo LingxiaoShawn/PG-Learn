@@ -19,9 +19,6 @@ function [W, W_PreKNNExp] = SimGaussianGraph_KNN(X, k, a, Type, IsSparse, W_PreK
 % Output: 
 %   W: constructed graph (sparse matrix)
 %   W_PreKNNExp: the part inside exp operation (for gaussian kernel) 
-%   
-
-
 if nargin < 4
    ME = MException('InvalidCall:NotEnoughArguments', ...
        'Function called with too few arguments');

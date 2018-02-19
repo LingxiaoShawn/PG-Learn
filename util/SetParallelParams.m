@@ -13,7 +13,7 @@ function params = SetParallelParams(params)
 % params.timeMultiplier - the multiplier for increasing time of each round
 % params.learningRate   - learning rate for gradient-based method
 % params.batchSize      - batch size for learning vector a 
-TODO: % params.method         - PG-Learn or MinEnt
+% params.method         - PG-Learn or MinEnt
 % params.isNewPool      - whether start a new pool for the parallel run
 % params.showAllHistory - whether show all history, this is for RndSet
 %                         parallel framework
