@@ -1,0 +1,11 @@
+# --------------------------------------------------
+# Adaptive Edge Weighting for Label Propagation
+# Author: M. Karasuyama (karasuyama@nitech.ac.jp)
+# --------------------------------------------------
+
+This is a matlab implementation of adaptive edge weighting method for label propagation proposed by "Manifold-based similarity adaptation for label propagation" (NIPS 2013) and "Adaptive Edge Weighting for Graph-Based Learning Algorithms" (Machine Learning Journal 2017).
+
+Main files:
+[test_run1.m]: A test script for running the method using synthetic data shown in the above paper.
+[AEW.m]: Optimizing edge weights for label propagation
+[HGF.m]: Label propagation by the harmonic Gaussian field model

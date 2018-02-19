@@ -1,23 +1,25 @@
 function [W, W_PreKNNExp] = SimGaussianGraph_KNN(X, k, a, Type, IsSparse, W_PreKNNExp, r, old_a_r)
 % Construct a similarity graph and then sparsify it by KNN. 
-%
+% =========================================================
 % Input:
 %   X: n * d matrix input
 %   k: param of KNN
 %   a(A): vector or matrix, 
 %      if a is vector A = diag(a) and all elements of a should greater than
-%      0; if a is a matrix, A = a;
-%       
+%      0; if a is a matrix, A = a;   
 %   Type: Type of similarity function and KNN type 
 %       1 - Euclidean 
-%       2 - Cosine
+%       2 - Cosine (current not support)
+%   IsSparse: Use sparse operation or not, if true then all following
+%           operation in the algorithm(PG-Learn) will be sparse. 
 %   W_PreKNNExp: -(diag(XAX) + diag(XAX)T - 2*XAX)
 %   r: batch index
 %   old_a_r: old a(r)
 %
 % Output: 
 %   W: constructed graph (sparse matrix)
-%   W_PreKNNExp: history of constructed graph before put input 3gaussian
+%   W_PreKNNExp: the part inside exp operation (for gaussian kernel) 
+%   
 
 
 if nargin < 4
