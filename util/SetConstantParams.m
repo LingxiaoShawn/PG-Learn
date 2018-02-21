@@ -8,6 +8,7 @@ function params = SetConstantParams(params)
 % params.split_val   - whether choose to  split labeled data into train set 
 %                       + validation set
 % params.tic_started - if the tic is started yet 
+% params.method      - PG-Learn or MinEnt
 if ~isfield(params, 'graph_type')
     params.graph_type = 1;
 end
@@ -28,4 +29,7 @@ if ~isfield(params, 'split_val')
 end
 if ~isfield(params, 'tic_started')
     params.tic_started = false;
+end
+if ~isfield(params, 'method')
+    params.method = 'PG-Learn';
 end

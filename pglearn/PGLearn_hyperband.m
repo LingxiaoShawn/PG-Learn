@@ -390,11 +390,11 @@ if exist('converged_results','var')
     end   
 end
 %% save to disk
-savefig(strcat('results/parallel/figOf-',name,'.fig'));
+savefig(strcat('results/figOf-',name,'.fig'));
 if exist('converged_results','var')
-    save(strcat('results/parallel/',name,'.mat'), 'output_saved', 'converged_results', 'all_histories');
+    save(strcat('results/',name,'.mat'), 'output_saved', 'converged_results', 'all_histories');
 else
-    save(strcat('results/parallel/',name,'.mat'), 'output_saved', 'all_histories');
+    save(strcat('results/',name,'.mat'), 'output_saved', 'all_histories');
 end
 %% return 
 combinedResult.combined_max_v_history = combined_max_v_history;

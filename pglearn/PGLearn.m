@@ -128,7 +128,7 @@ while toc <= time_limit
         % calculate test_acc, using all labeled data
         F_test = LabelPropagation(W, fl, alpha, max_iter);
         ftest = (vec2ind(F_test(nTV+1:end,:)') - 1)'; 
-        test_acc = sum(ftest == yUnlabeled) / nTest 
+        test_acc = sum(ftest == yTest) / nTest 
         max_t = test_acc;
         max_a = a;   
         max_g = -1;
@@ -170,11 +170,11 @@ while toc <= time_limit
         % compute partial g and g
         Fl = F(1:nTV,:);
         partialFl = partialF(1:nTV,:,:);
-        [new_g, partialG] = LossPGLearn(Fl, partialFl, yLabeled);        
+        [new_g, partialG] = LossPGLearn(Fl, partialFl, [yTrain;yValid]);        
     end
     if strcmp(params_constant.method, 'MinEnt')
         % compute partial g and g
-        Fu = F(l_0+1:end,:);
+        Fu = F(nTV+1:end,:);
         partialFu = partialF(nTV+1:end,:,:);
         [new_g, partialG] = LossMinEnt(Fu, partialFu); 
     end   
