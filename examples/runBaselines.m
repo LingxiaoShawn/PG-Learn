@@ -21,11 +21,11 @@ params_alterable.k = 5;
 params_alterable.sigma_range = [0.3162 * mean_dist 3.1623 * mean_dist];
 
 %% random search
-result = random_search(data, params_constant, params_alterable)
+% result = random_search(data, params_constant, params_alterable)
 %% grid search 
-result = grid_search(data, params_constant, params_alterable)
+% result = grid_search(data, params_constant, params_alterable)
 %% AEW 
-result = AEW_LLGC(data, params_constant, params_alterable)
+% result = AEW_LLGC(data, params_constant, params_alterable)
 %% IDML
 result = IDML_ITML(data, params_constant, params_alterable)
 %% MinEnt
