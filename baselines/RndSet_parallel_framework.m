@@ -90,7 +90,8 @@ end
 clear results_pool
 pool_lengths = ones(1, n_parallel);
 
-=n_send_params = 0;
+% check exisitance of params
+n_send_params = 0;
 for i = 1:n_max
     if isfield(params, sprintf('param%dSet',i))
         n_send_params = n_send_params + 1;
