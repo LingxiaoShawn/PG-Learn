@@ -253,8 +253,8 @@ xlabel('time/s');
 ylabel('accuracy');
 hold off
 %% return combined results
-save(strcat('results/parallel/',name,'.mat'), 'saved_results', 'combined_max_v_history', 'combined_max_t_history', 'combined_timing'); 
-savefig(strcat('results/parallel/figOf-',name,'.fig'));
+save(strcat('results/',name,'.mat'), 'saved_results', 'combined_max_v_history', 'combined_max_t_history', 'combined_timing'); 
+savefig(strcat('results/figOf-',name,'.fig'));
 
 combinedResult.combined_max_v_history = combined_max_v_history;
 combinedResult.combined_max_t_history = combined_max_t_history;
