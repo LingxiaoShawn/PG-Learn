@@ -11,7 +11,7 @@ init_range = [0.1 * mean_dist^2, 10 * mean_dist^2];
 dataInfoString = sprintf('10%%noise_level%s_partition%d_trainPer%d%%_noise%d',...
                                  dataset, partition, train_per*100, noise_level);
 % set parameters
-params_paralllel = struct();
+params_parallel = struct();
 params_parallel = SetParallelParams(params_parallel);
 params_parallel.totalHours = 0.25;
 params_parallel.isNewPool = false;

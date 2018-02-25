@@ -90,10 +90,10 @@ while (true),
 
     iter = iter + 1;
     if (mod(iter, 5000) == 0),       
-       disp(sprintf('itml iter: %d, conv = %f', iter, conv));
+       fprintf('itml iter: %d, conv = %f\n', iter, conv);
     end
 end
-disp(sprintf('itml converged to tol: %f, iter: %d', conv, iter));
+fprintf('itml converged to tol: %f, iter: %d\n', conv, iter);
 
 
 
