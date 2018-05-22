@@ -1,7 +1,5 @@
 # PG-Learn
 An efficient and effective algorithm of learning graph for semi-supervised learning. (MATLAB Code)  
-Our work is submitting to 2018 KDD.  
-All code will be updated fully after the KDD deadline. 
 
 ## Instruction: Run code & examples
 Before use the code you should compile mtimesx lib, which is inside util/lib/mtimesx/ folder. Please 
